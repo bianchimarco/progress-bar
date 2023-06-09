@@ -45,9 +45,10 @@ function progressBarPercentFn() {
 // total scroll =  total document height - visible screen height
     const totalScrollPercent = progressBarPercent.html.scrollHeight - progressBarPercent.html.clientHeight;
 // scroll done by user in % =   scroll top * 100 / total scroll.
-     progressBarPercent.percent.innerHTML = "hai letto il " + (progressBarPercent.html.scrollTop * 100) / totalScrollPercent + " % di questa pagina";
-    /* let larghezza = progressBarPercent.percent.style.width;
-    console.log(larghezza); */
+    progressBarPercent.percent.innerHTML = "hai letto il " + (progressBarPercent.html.scrollTop * 100) / totalScrollPercent + "%";
+
+     larghezza = progressBarPercent.percent.innerHTML.substring(0,18) + "%";
+    console.log(larghezza);
 }
 
 
